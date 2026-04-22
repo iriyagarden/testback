@@ -1,0 +1,45 @@
+{
+  "test_settings": {
+    "base_url": "https://demo.ecommerce.com",
+    "browser": "chrome",
+    "headless": false,
+    "timeout": 10,
+    "screenshot_on_failure": true
+  },
+  "test_data": {
+    "products": [
+      {"id": "p001", "name": "智能手机", "price": 2999.00},
+      {"id": "p002", "name": "笔记本电脑", "price": 6999.00},
+      {"id": "p003", "name": "无线耳机", "price": 399.00}
+    ],
+    "users": {
+      "standard": {"username": "test_user", "password": "test123"},
+      "premium": {"username": "premium_user", "password": "premium123"}
+    }
+  },
+  "assertions": {
+    "price_tolerance": 0.01,
+    "wait_time": 2
+  }
+}
+import math
+
+def calculate_sine(angle_degrees):
+    """计算正弦值"""
+    return math.sin(math.radians(angle_degrees))
+
+def calculate_cosine(angle_degrees):
+    """计算余弦值"""
+    return math.cos(math.radians(angle_degrees))
+
+def calculate_tangent(angle_degrees):
+    """计算正切值"""
+    return math.tan(math.radians(angle_degrees))
+
+# 使用示例
+angle = 30
+print(f"sin({angle}°) = {calculate_sine(angle)}")
+print(f"cos({angle}°) = {calculate_cosine(angle)}")
+print(f"tan({angle}°) = {calculate_tangent(angle)}")
+
+def
